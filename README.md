@@ -1,4 +1,4 @@
-# Ejercicio 4 Validaciones y Almacenamiento Local (localstorage)
+# Ejercicio 4 Clases y Almacenamiento Local (localstorage)
 
 ## Tiempo para realizar la actividad
 
