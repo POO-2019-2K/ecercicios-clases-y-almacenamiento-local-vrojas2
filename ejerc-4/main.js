@@ -7,12 +7,6 @@ class Main {
       document.querySelector("#Inscribir"),
     );
 
-    document.querySelector("#btnAsist").addEventListener("click", () => {
-      if (form.checkValidity() === true) {
-        inscribir.addEmployee(employee);
-      }
-     });
-
     document.querySelector("#btnAdd").addEventListener("click", () => {
       let form = document.querySelector("#form");
 
@@ -33,7 +27,18 @@ class Main {
      form.classList.add("was-validated");
     });
 
-    
+    document.querySelector("#btnAsist").addEventListener("click", () => {
+      let name = document.querySelector("#name").value;
+      let numCuenta = document.querySelector("#numCuenta").value;
+
+      let objEmployee = {
+        name: name,
+        numCuenta: numCuenta,
+      };
+            
+      let employee = new Employee(objEmployee);
+      inscribir.addEmployee(employee);
+    });
   }
 }
 

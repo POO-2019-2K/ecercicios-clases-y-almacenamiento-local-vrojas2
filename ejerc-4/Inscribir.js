@@ -3,6 +3,7 @@ import Employee from "./Employee.js";
 export default class Inscribir {
   constructor(tableInscribir) {
     this._tableInscribir = tableInscribir;
+    this._asistencia = 0;
     this._employees = [];
     //localStorage.removeItem(employees);  
     this._initTables();
@@ -32,7 +33,7 @@ export default class Inscribir {
 
     cellNumCuenta.innerHTML = employee.numCuenta;
     cellName.innerHTML = employee.name;
-    cellAsistencia.innerHTML = employee.asistencia;
+    cellAsistencia.innerHTML = this._asistencia ;
 
       let objEmployee = {
         name: employee.name,
@@ -73,4 +74,16 @@ export default class Inscribir {
     this._addToTable(employee);
     localStorage.setItem("employees", JSON.stringify(this._employees));
   }
+
+  addAsistencia(employee) {
+    if(employee.numCuenta === numCuenta) {
+        this._asistencia = 1;
+        
+    }
+    else{
+        alert('Alumno no registrado');
+    }
+    this._addToTable(employee);
+    localStorage.setItem("employee", JSON.stringify(this._employees));
+}
 }
