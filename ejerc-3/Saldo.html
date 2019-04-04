@@ -11,7 +11,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="Inscribir.css" />
+    <link rel="stylesheet" type="text/css" href="Saldo.css" />
   </head>
   <body>
     <div class="jumbotron">
@@ -25,29 +25,29 @@
           <div class="row">
             <form id="form" class="col-12 needs-validation" novalidate>
               <div class="form-group">
-                <label for="numCuenta">Número de cuenta</label>
+                <label for="retiro">Retiro</label>
                 <input
                   type="number"
                   class="form-control"
-                  id="numCuenta"
-                  placeholder="12345"
+                  id="retiro"
+                  placeholder="1000"
                   required
                 />
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">El campo de nombre es obligatorio</div>
               </div>
               <div class="form-group">
-                <label for="name">Nombre</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Juan Pérez"
-                  required
-                />
-                <div class="valid-feedback">Correcto</div>
-                <div class="invalid-feedback">El campo de nombre es obligatorio</div>
-              </div>
+                <label for="deposito">Depósito</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="deposito"
+                    placeholder="1000"
+                    required
+                  />
+                  <div class="valid-feedback">Correcto</div>
+                  <div class="invalid-feedback">El campo de nombre es obligatorio</div>
+                </div>
               <button id="btnAdd" type="button" class="btn btn-primary">
                 Agregar
               </button>
@@ -56,7 +56,7 @@
         </div>
         <!-- Tabla -->
         <div class="col-md-8">
-          <table id="Inscribir" class="table">
+          <table id="SaldoCu" class="table">
             <thead>
               <tr>
                 <th>Número de Cuenta</th>
@@ -88,6 +88,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
   </body>
 </html>

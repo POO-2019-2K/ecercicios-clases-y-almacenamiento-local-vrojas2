@@ -3,7 +3,6 @@ import Employee from "./Employee.js";
 export default class Inscribir {
   constructor(tableInscribir) {
     this._tableInscribir = tableInscribir;
-    this._numEmployees = 0;
     this._employees = [];
     //localStorage.removeItem(employees);  
     this._initTables();
@@ -29,9 +28,11 @@ export default class Inscribir {
 
     let cellNumCuenta = row.insertCell(0);
     let cellName = row.insertCell(1);
+    let cellAsistencia = row.insertCell(2);
 
     cellNumCuenta.innerHTML = employee.numCuenta;
     cellName.innerHTML = employee.name;
+    cellAsistencia.innerHTML = employee.asistencia;
 
       let objEmployee = {
         name: employee.name,

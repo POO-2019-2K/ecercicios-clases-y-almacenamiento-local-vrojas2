@@ -7,14 +7,20 @@ class Main {
       document.querySelector("#Inscribir"),
     );
 
+    document.querySelector("#btnAsist").addEventListener("click", () => {
+      if (form.checkValidity() === true) {
+        inscribir.addEmployee(employee);
+      }
+     });
+
     document.querySelector("#btnAdd").addEventListener("click", () => {
       let form = document.querySelector("#form");
 
       if(form.checkValidity() === true) {
-        let name = document.querySelector("#name").value;
-        let numCuenta = document.querySelector("#numCuenta").value;
+      let name = document.querySelector("#name").value;
+      let numCuenta = document.querySelector("#numCuenta").value;
 
-        let objEmployee = {
+      let objEmployee = {
           name: name,
           numCuenta: numCuenta,
         };
@@ -26,6 +32,8 @@ class Main {
     
      form.classList.add("was-validated");
     });
+
+    
   }
 }
 

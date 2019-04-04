@@ -11,12 +11,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="Inscribir.css" />
+    <link rel="stylesheet" type="text/css" href="Saldo.css" />
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Inscripciones</h1>
-      <p>Registro de inscripciones de alumnos a un curso</p>
+      <h1>Saldo</h1>
+      <p>Tu Banco</p>
     </div>
     <div class="container-fluid">
       <div class="row">
@@ -25,42 +25,54 @@
           <div class="row">
             <form id="form" class="col-12 needs-validation" novalidate>
               <div class="form-group">
-                <label for="numCuenta">Número de cuenta</label>
+                <label for="cuenta">Cuenta</label>
                 <input
                   type="number"
                   class="form-control"
-                  id="numCuenta"
-                  placeholder="12345"
+                  id="cuenta"
+                  placeholder="1234"
                   required
                 />
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">El campo de nombre es obligatorio</div>
               </div>
               <div class="form-group">
-                <label for="name">Nombre</label>
+                <label for="retiro">Retiro</label>
                 <input
-                  type="text"
+                  type="number"
                   class="form-control"
-                  id="name"
-                  placeholder="Juan Pérez"
+                  id="retiro"
+                  placeholder="1000"
+                  required
+                />
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">El campo de nombre es obligatorio</div>
+              </div>
+              <div class="form-group">
+              <label for="deposito">Depósito</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="deposito"
+                  placeholder="1000"
                   required
                 />
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">El campo de nombre es obligatorio</div>
               </div>
               <button id="btnAdd" type="button" class="btn btn-primary">
-                Agregar
+                Saldo
               </button>
             </form>
           </div>
         </div>
         <!-- Tabla -->
         <div class="col-md-8">
-          <table id="Inscribir" class="table">
+          <table id="Saldo" class="table">
             <thead>
               <tr>
-                <th>Número de Cuenta</th>
-                <th>Nombre</th>
+                <th>Cuenta</th>
+                <th>Saldo</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -70,7 +82,6 @@
       <!-- Row -->
     </div>
     <!-- Container -->
-
     <script src="./main.js" type="module"></script>
 
     <script
