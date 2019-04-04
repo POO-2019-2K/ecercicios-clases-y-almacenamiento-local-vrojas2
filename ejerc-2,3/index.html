@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Inscripciones</title>
+    <title>Saldo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -11,12 +11,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="Saldo.css" />
+    <link rel="stylesheet" type="text/css" href="saldo.css" />
   </head>
   <body>
     <div class="jumbotron">
       <h1>Saldo</h1>
-      <p>Tu Banco</p>
+      <p>Tu banco</p>
     </div>
     <div class="container-fluid">
       <div class="row">
@@ -25,53 +25,43 @@
           <div class="row">
             <form id="form" class="col-12 needs-validation" novalidate>
               <div class="form-group">
-                <label for="cuenta">Cuenta</label>
+                <label for="depositar">Depositar</label>
                 <input
                   type="number"
                   class="form-control"
-                  id="cuenta"
-                  placeholder="1234"
+                  id="depositar"
+                  placeholder="$1000"
                   required
                 />
                 <div class="valid-feedback">Correcto</div>
-                <div class="invalid-feedback">El campo de nombre es obligatorio</div>
+                <div class="invalid-feedback">El campo es obligatorio</div>
               </div>
               <div class="form-group">
-                <label for="retiro">Retiro</label>
+                <label for="retirar">Retirar</label>
                 <input
                   type="number"
                   class="form-control"
-                  id="retiro"
-                  placeholder="1000"
+                  id="retirar"
+                  placeholder="$1000"
                   required
                 />
                 <div class="valid-feedback">Correcto</div>
-                <div class="invalid-feedback">El campo de nombre es obligatorio</div>
-              </div>
-              <div class="form-group">
-              <label for="deposito">Depósito</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="deposito"
-                  placeholder="1000"
-                  required
-                />
-                <div class="valid-feedback">Correcto</div>
-                <div class="invalid-feedback">El campo de nombre es obligatorio</div>
+                <div class="invalid-feedback">Introduzca un nombre válido</div>
               </div>
               <button id="btnAdd" type="button" class="btn btn-primary">
                 Saldo
               </button>
+             
             </form>
           </div>
         </div>
         <!-- Tabla -->
         <div class="col-md-8">
-          <table id="Saldo" class="table">
+          <table id="saldo" class="table">
             <thead>
               <tr>
-                <th>Cuenta</th>
+                <th>Deposito</th>
+                <th>Retiro</th>
                 <th>Saldo</th>
               </tr>
             </thead>
@@ -82,6 +72,7 @@
       <!-- Row -->
     </div>
     <!-- Container -->
+
     <script src="./main.js" type="module"></script>
 
     <script
