@@ -1,5 +1,5 @@
-import Saldo from "./Saldo";
-import Employee from "./Employee";
+import Saldo from "./Saldo.js";
+import Employee from "./Employee.js";
 
 class Main {
     constructor() {
