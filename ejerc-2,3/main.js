@@ -18,7 +18,7 @@ class Main {
             }
             let employee = new Employee(objEmployee);
 
-            salldo.addEmployee(employee);
+            saldo.addEmployee(employee);
           }
 
         form.classList.add("was-validated");
